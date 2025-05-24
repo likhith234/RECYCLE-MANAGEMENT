@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Recycle Management Signup</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-green-100 font-roboto">
+    <nav class="bg-green-600 p-4 flex justify-between items-center">
+        <div class="text-white text-2xl font-bold">Recycle Management</div>
+        <div class="flex space-x-4 text-white">
+            <a class="hover:underline" href="home.html">Home</a>
+            <a class="hover:underline" href="login.html">Login</a>
+        </div>
+    </nav>
+
+    <div class="flex justify-center items-center h-screen">
+        <div class="bg-white p-8 rounded shadow-lg w-full max-w-md">
+            <h2 class="text-3xl font-bold mb-4">Sign Up</h2>
+            <form action="signup.php" method="POST">
+                <div class="mb-4">
+                    <label class="block text-gray-700" for="username">Username</label>
+                    <input class="w-full p-2 border border-gray-300 rounded mt-1" id="username" name="username" type="text" required />
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700" for="gmail">Gmail</label>
+                    <input class="w-full p-2 border border-gray-300 rounded mt-1" id="gmail" name="gmail" type="email" required />
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700" for="password">Password</label>
+                    <input class="w-full p-2 border border-gray-300 rounded mt-1" id="password" name="password" type="password" required />
+                </div>
+                <button class="w-full bg-green-600 text-white p-2 rounded" type="submit">Sign Up</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
